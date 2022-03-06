@@ -1,3 +1,6 @@
+:root{
+	--main-color:#19c8fa;
+}
 /* start Global Rules */
 *{
     box-sizing: border-box;
@@ -7,6 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
+	background: black;
 }
 ul{
     list-style: none;
@@ -35,3 +39,121 @@ ul{
 	}
 }
 /* end Global Rules */
+/* start header */
+header{
+	
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center ;
+	position: relative;
+	min-height: 97px;
+}
+header .container::after{
+	content: "";
+	background:#a2a2a2;
+	position: absolute;
+	height: 1px;
+	width: calc(100% - 30px);
+	bottom: 0px;
+	left: 15px;
+	z-index: -1;
+}
+header .logo img{
+	height: 40px;
+}
+header nav{
+	flex:1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+header ul{
+	display: flex;
+}
+@media (max-width:768px) {
+	header ul{
+		display: none;
+	}
+	ul.open{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: bolder;
+	}
+}
+header  ul a{
+	display: block;
+	padding: 40px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	transition: 0.3s;
+}
+header  ul a:hover,
+header  ul a:active{
+	color: var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+header .form{
+	width: 40px;
+	height: 30px;
+	position: relative;
+	margin-left: 30px;
+	border-left: 1px solid white;
+}
+header .form svg{
+	fill:white;
+	position: absolute;
+}
+.menu{
+	position: relative;
+	width: 40px ;
+	cursor: pointer;
+}
+.burger-menu{
+	background: white;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	
+}
+.burger-menu.open{
+	background: transparent;
+	transition: 1s;
+}
+.burger-menu::before{
+	position: absolute;
+	content: "";
+	background:white;
+	width: 100%;
+	height:inherit;
+	transform: translateY(10px);
+}.burger-menu.open::before{
+	transform: rotate(225deg);
+}
+
+.burger-menu::after{
+	position: absolute;
+	content: "";
+	background:white;
+	width: 100%;
+	height:inherit;
+	transform: translateY(-10px);
+}.burger-menu.open::after{
+	transform: rotate(135deg);
+}
+@media (min-width:768px) {
+	.menu{
+		display:none;
+	}
+}
+
+
+/* end header */

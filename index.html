@@ -18,7 +18,38 @@
     <title>kasper template</title>
 </head>
 <body>
-    
+        <!-- start Header -->
+        <header>
+            <div class="container">
+                <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <nav>
+                    <div class="menu">
+                        <span class="burger-menu"></span>
+                    </div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="form">
+                        <!-- add search svg -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end Header -->
+<script>
+        const menuToggle = document.querySelector(".menu");
+        const navBar = document.querySelector("ul");
+        const menu = document.querySelector(".burger-menu");
+        menuToggle.onclick = () => {
+            navBar.classList.toggle("open");
+            menu.classList.toggle("open")
+        }
+</script>
 
 </body>
 </html>
