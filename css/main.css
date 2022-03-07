@@ -306,6 +306,7 @@ header .form img{
 }
 .services .box img{
 	margin-right:50px;
+	width:60px;
 }
 @media (max-width:768px){
 	.services .box{
@@ -313,7 +314,7 @@ header .form img{
 		text-align: center;
 	}
 	.services .box img{
-		margin: 30px;
+		margin: 30px auto;
 	}
 }
 .services .box h3{
