@@ -183,7 +183,8 @@ header .form img{
 	width: 100%;
 	height:inherit;
 	transform: translateY(10px);
-}.burger-menu.open::before{
+}
+.burger-menu.open::before{
 	transform: rotate(225deg);
 }
 
@@ -458,3 +459,50 @@ header .form img{
 }
 
 /* end    Portfolio */
+
+
+/* start  video */
+.video{
+	position: relative;
+}
+.video::before{
+	content:"";
+	position:absolute ;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 0;
+}
+.video video{
+	width: 100%;
+	aspect-ratio:16/9 ;
+}
+.video .text {
+	width: 100%;
+	position: absolute;
+	top:50%;left: 50%;
+	transform: translate(-50%,-50%);
+	background:hsla(193, 96%, 54%, 0.4);
+	padding: 5%;
+	color: #fff;
+	text-align: center;
+}
+.video .text h2{
+	margin :0 0 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.video .text p{
+	margin-bottom: 30px;
+}
+.video .text button{
+	background: black;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	text-transform:uppercase;
+	cursor: pointer;
+}
+/* end    video */
