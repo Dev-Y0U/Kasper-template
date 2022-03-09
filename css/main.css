@@ -506,3 +506,23 @@ header .form img{
 	cursor: pointer;
 }
 /* end    video */
+
+/* start  about us */
+.about{
+	padding-top:100px ;
+	overflow: hidden;
+	text-align: center;
+}
+.about img{
+	position:relative ;
+	bottom: -120px;
+	margin-top: -120px;
+	max-width: 100%;
+}
+@media(max-width:765px){
+	.abouti img{
+		bottom: -60px;
+		margin-top: -60px;
+	}
+}
+/* end    about us */
