@@ -567,15 +567,19 @@ header .form img{
 		flex-basis: 50%;
 	}
 }
-.stat .box img{
-	width: 40px;
+.stat .box .img{
+	width: 50px;
 	margin: 0 auto 30px;
 	padding: 10px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	background: #000;
+	background: #0e0e0e;
 	border-radius: 50%;
+	position:relative;
+}
+.stat .img img{
+	width:100%
 }
 .stat .box .number{
 	font-weight: bold;
