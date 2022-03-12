@@ -520,7 +520,7 @@ header .form img{
 	max-width: 100%;
 }
 @media(max-width:765px){
-	.abouti img{
+	.about img{
 		bottom: -60px;
 		margin-top: -60px;
 	}
@@ -691,3 +691,31 @@ header .form img{
 	top: -15px;
 }
 /* end    skills */
+/* start  quote */
+.quote{
+	padding:var(--section-padding);
+	background-image: url(../images/quote.jpg);
+	background-position: center;
+	background-size:cover;
+	position: relative;
+	text-align:center;
+	color:white;
+}
+.quote::before{
+	content:"";
+	position:absolute ;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.quote .container{
+	position:relative;
+}
+.quote q{
+	font-size:30px;
+	margin-bottom: 2px;
+	display: block;
+}
+/* end    quote */
