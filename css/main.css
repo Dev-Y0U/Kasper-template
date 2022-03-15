@@ -1,3 +1,21 @@
+/* !===========(Table of content)===========
+1-global     rules  from  (23) to (59)
+2-Components rules  from (60)  to (99)
+3-header     rules  from (100) to (219)
+4-landing    rules  from (220) to (302)
+5-services   rules  from (303) to (339)
+6-design     rules  from (340) to (396)
+7-Portfolio  rules  from (397) to (468)
+8-video      rules  from (469) to (513)
+9-about us   rules  from (515) to (533)
+10-stat      rules  from (534) to (594) 
+11-skills    rules  from (595) to (698)      
+12-quote     rules  from (699) to (726) 
+13-Pricing   rules  from (727) to (817) 
+14-subscribe rules  from (818) to (883) 
+15-contact   rules  from (884) to (955) 
+16-footer    rules  from (956) to (1000) */
+/*!=="hit (CTRL+G) and enter the line number"== */
 :root{
 	--main-color:#19c8fa;
 	--section-padding:100px 0;
@@ -71,7 +89,6 @@ ul{
 	border: 2px solid #333;
 	border-radius: 50%;
 	background: #fff;
-
 }
 .main-heading p{
 	max-width: 550px;
@@ -79,9 +96,6 @@ ul{
 	line-height: 1.4;
 	color: #777;
 }
-
-
-
 /*end   Components */
 /* start header */
 header{
@@ -187,7 +201,6 @@ header .form img{
 .burger-menu.open::before{
 	transform: rotate(225deg);
 }
-
 .burger-menu::after{
 	position: absolute;
 	content: "";
@@ -204,7 +217,6 @@ header .form img{
 	}
 }
 /* end header */
-
 /* start landing */
 .landing{
 	min-height: 100vh;
@@ -287,9 +299,7 @@ header .form img{
 .landing .dots li.active{
 	background: var(--main-color);
 }
-
 /* end landing */
-
 /* start services */
 .services{
 	padding:var(--section-padding);
@@ -326,7 +336,6 @@ header .form img{
 	line-height: 1.4;
 	color: #777;
 }
-
 /* end   services */
 /* start  design */
 .design{
@@ -455,12 +464,8 @@ header .form img{
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-
 }
-
 /* end    Portfolio */
-
-
 /* start  video */
 .video{
 	position: relative;
@@ -947,7 +952,6 @@ header .form img{
 		margin-bottom: 30px;
 	}
 }
-
 /* end    contact */
 /* start  footer */
 footer{
@@ -981,7 +985,6 @@ footer p:not(.copyright){
 	font-size: 22px;
 	width:fit-content;
 	margin: 20px auto;
-
 }
 footer .social-icons img{
 	width:80px;
